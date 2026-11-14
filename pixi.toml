@@ -32,6 +32,10 @@ sdtools = { path = ".", editable = true }
 lab = "jupyter lab notebooks"
 # pixi run fetch <youtube-url> <song-slug> [start] [end]
 fetch = "python tools/fetch.py"
+# pixi run analyze <audio> [--start S --end S]
+analyze = "python tools/analyze.py"
+# pixi run compare <reference> <attempt> [--ref-start S --ref-end S]
+compare = "python tools/compare.py"
 # pixi run new-song <song-slug>
 new-song = "python tools/new_song.py"
 check = "python -c 'import numpy, scipy, librosa, soundfile, pyloudnorm, sdtools; print(\"env ok, librosa\", librosa.__version__)'"

@@ -32,7 +32,7 @@ def main():
     song = ROOT / "songs" / slug
     if song.exists():
         sys.exit(f"{song} already exists")
-    for sub in ["audio", "renders", "figures", "data", "scripts"]:
+    for sub in ["audio", "attempts", "guides", "renders", "figures", "data", "scripts"]:
         (song / sub).mkdir(parents=True)
     (song / "README.md").write_text(README.format(slug=slug))
     print(f"Created {song}\nNext: pixi run fetch <url> {slug}")
