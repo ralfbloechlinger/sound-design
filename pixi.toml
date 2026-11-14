@@ -1,0 +1,37 @@
+[workspace]
+name = "sound-design"
+description = "Analysing songs to learn and replicate their sound design"
+authors = ["Ralf Bloechlinger"]
+channels = ["conda-forge"]
+platforms = ["osx-arm64"]
+
+[dependencies]
+python = "3.12.*"
+# Numerics + plotting
+numpy = "*"
+scipy = "*"
+pandas = "*"
+matplotlib = "*"
+# Audio analysis
+librosa = "*"          # spectrograms, pitch (pyin), onsets, tempo, chroma
+pysoundfile = "*"      # read/write wav/flac at any bit depth (float wavs too)
+# Getting audio in
+ffmpeg = "*"
+yt-dlp = "*"
+# Interactive learning
+jupyterlab = "*"
+ipykernel = "*"
+ipywidgets = "*"
+nbstripout = ">=0.9.1,<0.10"
+
+[pypi-dependencies]
+pyloudnorm = "*"       # LUFS loudness (how loud is the master, really?)
+sdtools = { path = ".", editable = true }
+
+[tasks]
+lab = "jupyter lab notebooks"
+# pixi run fetch <youtube-url> <song-slug> [start] [end]
+fetch = "python tools/fetch.py"
+# pixi run new-song <song-slug>
+new-song = "python tools/new_song.py"
+check = "python -c 'import numpy, scipy, librosa, soundfile, pyloudnorm, sdtools; print(\"env ok, librosa\", librosa.__version__)'"
