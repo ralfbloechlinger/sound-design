@@ -26,6 +26,18 @@ pixi run nbstripout --install --attributes .gitattributes   # once per clone: ke
 pixi run check
 ```
 
+## Branches: template vs. your work
+`main` is a **clean, reusable template**: tools, docs, skills, lessons, and an empty `songs/`. Keep your own analyses (guides, figures, logs) on a personal branch:
+
+```bash
+git switch -c my-analysis          # once
+```
+```bash
+git switch my-analysis && git merge main   # pull template improvements into your work
+```
+
+Improve the tooling on `main` (or on a feature branch → `main`), and do song work on your branch. Audio is git-ignored on every branch, so it stays on disk when you switch.
+
 ## Working with Claude (Claude Code skills)
 Open this folder in Claude Code and use:
 

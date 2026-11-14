@@ -1,7 +1,7 @@
 [workspace]
 name = "sound-design"
 description = "Analysing songs to learn and replicate their sound design"
-authors = ["Ralf Bloechlinger"]
+authors = []
 channels = ["conda-forge"]
 platforms = ["osx-arm64"]
 
