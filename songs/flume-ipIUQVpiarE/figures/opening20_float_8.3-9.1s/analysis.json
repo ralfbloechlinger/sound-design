@@ -1,0 +1,99 @@
+{
+  "duration_s": 0.8,
+  "peak_db": 1.32,
+  "rms_db": -6.97,
+  "lufs": -7.02,
+  "crest_db": 8.29,
+  "bands": {
+    "sub": {
+      "range_hz": [
+        20,
+        120
+      ],
+      "level_db": -7.7,
+      "lr_corr": 1.0,
+      "side_minus_mid_db": -30.1
+    },
+    "low_mid": {
+      "range_hz": [
+        120,
+        500
+      ],
+      "level_db": -16.1,
+      "lr_corr": 0.77,
+      "side_minus_mid_db": -8.9
+    },
+    "mid": {
+      "range_hz": [
+        500,
+        2000
+      ],
+      "level_db": -43.4,
+      "lr_corr": 0.61,
+      "side_minus_mid_db": -6.1
+    },
+    "high_mid": {
+      "range_hz": [
+        2000,
+        6000
+      ],
+      "level_db": -115.8,
+      "lr_corr": 0.97,
+      "side_minus_mid_db": -12.9
+    },
+    "air": {
+      "range_hz": [
+        6000,
+        18000
+      ],
+      "level_db": -146.0,
+      "lr_corr": 0.99,
+      "side_minus_mid_db": -18.9
+    }
+  },
+  "envelope": {
+    "attack_ms": 39.99999999999999,
+    "peak_at_s": 0.11,
+    "decay_20db_ms": null
+  },
+  "brightness_hz": {
+    "median": 115.0,
+    "p10": 75.0,
+    "p90": 294.0
+  },
+  "pitch": {
+    "voiced_fraction": 1.0,
+    "median_hz": 42.53,
+    "median_note": "F1 (-45c)",
+    "range_notes": [
+      "D#1 (+5c)",
+      "G1 (-15c)"
+    ]
+  },
+  "harmonics": {
+    "f0_hz": 39.003261300668676,
+    "at_s": 0.77,
+    "levels_db": [
+      0.0,
+      -10.5,
+      -1.1,
+      -12.4,
+      -9.5,
+      -24.5,
+      -18.8,
+      -25.5,
+      -30.7,
+      -30.7
+    ],
+    "even_minus_odd_db": -7.7
+  },
+  "source": {
+    "file": "songs/flume-ipIUQVpiarE/audio/opening20_float.wav",
+    "start": 8.3,
+    "end": 9.1,
+    "band_hz": [
+      20.0,
+      500.0
+    ]
+  }
+}

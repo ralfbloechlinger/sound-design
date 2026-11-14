@@ -1,9 +1,9 @@
 {
   "duration_s": 1.6,
-  "peak_db": 3.02,
-  "rms_db": -12.88,
-  "lufs": -9.78,
-  "crest_db": 15.9,
+  "peak_db": -6.02,
+  "rms_db": -14.85,
+  "lufs": -15.74,
+  "crest_db": 8.83,
   "bands": {
     "sub": {
       "range_hz": [
@@ -19,77 +19,81 @@
         120,
         500
       ],
-      "level_db": -24.5,
-      "lr_corr": 0.85,
-      "side_minus_mid_db": -10.8
+      "level_db": -24.6,
+      "lr_corr": 0.88,
+      "side_minus_mid_db": -12.0
     },
     "mid": {
       "range_hz": [
         500,
         2000
       ],
-      "level_db": -24.5,
-      "lr_corr": -0.11,
-      "side_minus_mid_db": 0.9
+      "level_db": -50.1,
+      "lr_corr": -0.32,
+      "side_minus_mid_db": 2.8
     },
     "high_mid": {
       "range_hz": [
         2000,
         6000
       ],
-      "level_db": -20.0,
-      "lr_corr": -0.19,
-      "side_minus_mid_db": 1.7
+      "level_db": -118.0,
+      "lr_corr": 1.0,
+      "side_minus_mid_db": -9.0
     },
     "air": {
       "range_hz": [
         6000,
         18000
       ],
-      "level_db": -25.3,
-      "lr_corr": -0.04,
-      "side_minus_mid_db": 0.3
+      "level_db": -151.8,
+      "lr_corr": 0.98,
+      "side_minus_mid_db": -5.8
     }
   },
   "envelope": {
-    "attack_ms": 590.0,
-    "peak_at_s": 0.6,
+    "attack_ms": 40.0,
+    "peak_at_s": 0.06,
     "decay_20db_ms": null
   },
   "brightness_hz": {
-    "median": 4904.0,
-    "p10": 3780.0,
-    "p90": 5909.0
+    "median": 105.0,
+    "p10": 85.0,
+    "p90": 125.0
   },
   "pitch": {
     "voiced_fraction": 1.0,
     "median_hz": 39.0,
     "median_note": "D#1 (+5c)",
     "range_notes": [
-      "D#1 (-5c)",
-      "D#1 (+15c)"
+      "D#1 (+5c)",
+      "D#1 (+5c)"
     ]
   },
   "harmonics": {
     "f0_hz": 39.003261300668676,
-    "at_s": 0.26,
+    "at_s": 0.28,
     "levels_db": [
       0.0,
-      -8.1,
-      -1.9,
-      -13.9,
-      -10.6,
-      -26.4,
-      -18.4,
-      -23.0,
-      -35.1,
-      -30.1
+      -7.5,
+      -1.6,
+      -13.1,
+      -10.4,
+      -25.9,
+      -18.1,
+      -22.4,
+      -35.5,
+      -30.6
     ],
-    "even_minus_odd_db": -5.6
+    "even_minus_odd_db": -5.3
   },
   "source": {
     "file": "songs/flume-ipIUQVpiarE/audio/opening20_float.wav",
     "start": 8.9,
-    "end": 10.5
+    "end": 10.5,
+    "band_hz": [
+      20.0,
+      500.0
+    ]
   }
 }
