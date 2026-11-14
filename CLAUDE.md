@@ -28,5 +28,5 @@ analyse reference songs, get Serum 2 recreation guides, then compare the user's 
 - `/compare-attempt` — compare the user's latest render to the reference and suggest the next tweaks.
 
 ## Conventions
-- Never commit audio (git-ignored). Notebooks are stripped of outputs by nbstripout.
+- Never commit audio (git-ignored). Lessons/notebooks are `# %%` percent-format `.py` files (jupytext); never commit `.ipynb`.
 - Only analyse audio the user is entitled to use.

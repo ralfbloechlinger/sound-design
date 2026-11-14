@@ -4,6 +4,8 @@
 __pycache__/
 *.egg-info/
 .ipynb_checkpoints/
+# Lessons are # %% .py files; .ipynb copies are local only (they embed audio/plots)
+*.ipynb
 .DS_Store
 
 # Audio: copyrighted source material and regenerable renders stay local

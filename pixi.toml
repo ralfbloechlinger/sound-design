@@ -22,7 +22,7 @@ yt-dlp = "*"
 jupyterlab = "*"
 ipykernel = "*"
 ipywidgets = "*"
-nbstripout = ">=0.9.1,<0.10"
+jupytext = ">=1.19.6,<2"
 
 [pypi-dependencies]
 pyloudnorm = "*"       # LUFS loudness (how loud is the master, really?)
