@@ -22,7 +22,6 @@ The point isn't to copy presets. It's to train your ears: each suggestion is tie
 ## Setup
 ```bash
 pixi install                 # python 3.12, librosa, scipy, ffmpeg, yt-dlp, jupyter…
-pixi run nbstripout --install --attributes .gitattributes   # once per clone: keep notebook outputs out of git
 pixi run check
 ```
 
@@ -77,7 +76,7 @@ pixi run fetch <url> artist-title 0 30                       # download + float 
 pixi run analyze songs/artist-title/audio/source_float.wav --start 8.9 --end 10.5 --band 20 500
 pixi run compare songs/artist-title/audio/source_float.wav songs/artist-title/attempts/bass_v01.wav \
     --ref-start 8.9 --ref-end 10.5 --band 20 500
-pixi run lab                                                 # notebooks/: lessons
+pixi run lab                                                 # notebooks/: lessons (open .py → Notebook)
 ```
 Use `--band LO HI` whenever the reference is a full mix (e.g. `20 500` for bass). Otherwise hats and pads distort the brightness and width readings.
 
@@ -98,7 +97,7 @@ Full mapping and a Serum 2 module overview: **[docs/serum2.md](docs/serum2.md)**
 CLAUDE.md               context for Claude
 docs/serum2.md          Serum 2 reference + measurement→control symptom map
 .claude/skills/         /analyze-sound, /compare-attempt
-notebooks/              lessons (start with 01_listening_with_numbers)
+notebooks/              lessons as `# %%` .py files (start with 01_listening_with_numbers.py)
 src/sdtools/            helpers + features.py (shared feature extractor)
 tools/                  analyze, compare, fetch, new_song
 songs/<slug>/
